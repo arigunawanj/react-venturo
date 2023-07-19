@@ -104,7 +104,7 @@ function Konten() {
         </div>
 
         <p className="container mx-auto mt-4 text-xl font-bold">Makanan</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
 
           {products !== null && products.map((res) => {
             const alreadyAdded = inCart(res.id);
@@ -113,7 +113,7 @@ function Konten() {
                 <div className="container mx-auto mt-4" key={res.id}>
                   <div className="max-w-full h-100 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a>
-                      <img class="max-w-lg w-80 h-60" src={res.gambar} alt="" />
+                      <img class="max-w-lg md:w-40 md:h-24 w-80 h-60" src={res.gambar} alt="" />
                     </a>
                     <div class="p-5">
                       <a>
@@ -135,7 +135,7 @@ function Konten() {
 
         </div>
         <p className="container mx-auto mt-4 text-xl font-bold">Minuman</p>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4">
 
           {products !== null && products.map((res) => {
             const alreadyAdded = inCart(res.id);
@@ -144,7 +144,7 @@ function Konten() {
                 <div className="container mx-auto mt-4">
                   <div className="max-w-full h-100 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a>
-                      <img class="max-w-lg w-80 h-60" src={res.gambar} alt="" />
+                      <img class="max-w-lg md:w-40 md:h-24 w-80 h-60" src={res.gambar} alt="" />
                     </a>
                     <div class="p-5">
                       <a>
